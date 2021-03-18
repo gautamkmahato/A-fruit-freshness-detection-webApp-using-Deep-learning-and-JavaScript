@@ -4,18 +4,19 @@
   "display": "fullscreen",
   "scope": "/",
   "start_url": "/",
-  "app_name": "SimiCart",
+  "name": "SimiCart",
   "short_name": "SimiCart",
+  "prefer_related_applications": true,
   "description": "Next Generation fruit freshness detection Solutions",
   "icons": [
       {
           "src": "images/icon.png",
-          "sizes": "192x",
+          "sizes": "192x192",
           "type": "image/png"
       },
       {
-          "src": "images/icon2.png",
-          "sizes": "512x",
+          "src": "icon2.png",
+          "sizes": "512x512",
           "type": "image/png"
       }
   ]
