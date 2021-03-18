@@ -16,7 +16,7 @@
 
     <div class="screen">
         <div class="top-nav">
-            <h3 style="margin-top: 40px;margin-bottom: 10px; color: rgb(77, 126, 168); text-align: center;">Fruit  detection</h3>
+            <h3 style="margin-top: 40px;margin-bottom: 10px; color: rgb(79, 89, 99); text-align: center;">Fruit  detection</h3>
             <li class="profile"></li>
          </div>
 
@@ -73,18 +73,14 @@
              maxPredictions = model.getTotalClasses();
          
              // Convenience function to setup a webcam
-             //const flip = false; // whether to flip the webcam
-             webcam = new tmImage.Webcam(
-                width = 294,
-                height = 250,
-                flip = false,
-            ) // width, height, flip
-            webcam.setup(
-                MediaTrackConstraints = {}
-            )
-            await webcam.setup();
-           // request access to the webcam
-             await webcam.play();
+             const flip = false; // whether to flip the webcam
+             webcam = new tmImage.Webcam(294, 250, flip); // width, height, flip
+             await webcam.setup(
+                {
+                    facingMode: "environment"
+                }
+            );
+              webcam.play();
              window.requestAnimationFrame(loop);
          
              // append elements to the DOM
@@ -118,5 +114,6 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
+    
   </body>
 </html>
