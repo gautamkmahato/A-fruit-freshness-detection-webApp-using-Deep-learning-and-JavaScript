@@ -1,6 +1,9 @@
 {
     "short_name": "FruitXR",
     "name": "Fruit freshness detection",
+    "start_url": ".",
+    "background_color": "#3367D6",
+    "display": "standalone",
     "icons": [
       {
         "src": "/images/icon.png",
@@ -13,9 +16,6 @@
         "sizes": "512x512"
       }
     ],
-    "start_url": "/?source=pwa",
-    "background_color": "#3367D6",
-    "display": "standalone",
     "scope": "/",
     "theme_color": "#3367D6",
     "shortcuts": [
